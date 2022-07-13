@@ -1,0 +1,18 @@
+
+
+<div class="jumbotron">
+  <h1 class="display-4"> <%= @project.name %></h1>
+  <p class="lead"> <%= @project.description %></p>
+  <hr class="my-4">
+ <img src= <%= @project.image %>>
+ <span> <b>Price:</b> <%= @project.price %>.00</span>&nbsp;&nbsp;
+  <span> <b>Stock:</b> <%= @project.stock %></span>
+</div>
+
+<%= link_to "Edit", edit_project_path(@project),class:"btn btn-secondary" %> 
+<%= link_to "Back", projects_path,class:"btn btn-dark" %>
+
+  
+  
+  
+
